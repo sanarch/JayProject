@@ -1,6 +1,6 @@
 resource "aws_instance" "Jayec2" {
-  ami           = "ami-0a123d16bb24c4c67"
-  instance_type = "t3.micro"
+  ami           = var.ami_id
+  instance_type = var.instance_type
 
   tags = {
     Name = "TryCI/CDviaJenkins"
